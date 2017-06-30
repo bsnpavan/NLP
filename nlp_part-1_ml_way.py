@@ -150,7 +150,7 @@ for i in range(0,num_test_tweets):
 
 # Get a bag of words for the test set, and convert to a numpy array
 data_test_features = vectorizer.transform(clean_test_tweets)
-data_test_features = data_train_features.toarray()
+data_test_features = data_test_features.toarray()
 
 # Use the random forest to make sentiment label predictions
 result = forest.predict(data_test_features)
